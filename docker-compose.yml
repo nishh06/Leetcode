@@ -1,0 +1,10 @@
+version: '3'
+services:
+  leetcode:
+    container_name: leetcode-practice
+    platform: linux/amd64
+    image: leetcode-practice
+    build:
+      context: .
+    volumes:
+      - ./src:/usr/local/leetcode
